@@ -13,12 +13,10 @@ float getItemPrice()
 std::uint16_t getQuantity()
 {
 	std::cout << "Enter item quantity: ";
-	int input{};
+	std::uint16_t input{};
 	std::cin >> input;
-	if (input <= 0)
-		return 0;
 
-	return static_cast<std::uint16_t>(input);
+	return input;
 }
 
 char getItemCategoryCode()
