@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Price Tag Sanity Checker.vcxproj" />
+  <Project Path="Price Tag Sanity Checker.vcxproj" Id="0984371a-13cf-4275-b5f5-c7a3209ef0fb" />
 </Solution>

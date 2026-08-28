@@ -1,5 +1,6 @@
 #include "io/io.h"
 #include "validation/validation.h"
+#include "calculate/calculate.h"
 #include <iostream>
 
 int main()
@@ -22,7 +23,9 @@ int main()
 		return EXIT_FAILURE;
 	}
 
-	printReceipt(price, quantity, categoryCode);
+	float total{ calculateTotal(price, quantity, categoryCode) };
+
+	printReceipt(price, quantity, categoryCode, total);
 
 	return EXIT_SUCCESS;
 }
