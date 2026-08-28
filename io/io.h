@@ -2,6 +2,7 @@
 #define IO_H
 
 #include <cstdint>
+#include <cctype>
 
 float getItemPrice();
 std::uint16_t getQuantity();

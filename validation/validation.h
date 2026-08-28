@@ -1,8 +1,10 @@
 #ifndef VALIDATION_H
 #define VALIDATION_H
 
+#include <cstdint>
+
 bool isPriceValid(float price);
-bool isQuantityValid(int quantity);
+bool isQuantityValid(std::uint16_t quantity);
 bool isItemCategoryCodeValid(char code);
 
-#endif // !VALIDATION_H
+#endif
