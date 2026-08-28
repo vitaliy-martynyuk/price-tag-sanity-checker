@@ -1,22 +1,24 @@
 #include "io.h"
 #include <iostream>
 
-double getItemPrice()
+float getItemPrice()
 {
 	std::cout << "Enter item price: ";
-	double input{};
+	float input{};
 	std::cin >> input;
+	//validation will go here
 
 	return input;
 }
 
-double getQuantity()
+std::uint_fast16_t getQuantity()
 {
 	std::cout << "Enter item quantity: ";
-	double input{};
+	int input{};
 	std::cin >> input;
+	//validation will go here
 
-	return input;
+	return static_cast<std::uint_fast16_t>(input);
 }
 
 char getItemCategoryCode()
@@ -24,6 +26,7 @@ char getItemCategoryCode()
 	std::cout << "Enter item category code: ";
 	char input{};
 	std::cin >> input;
+	//validation will go here
 
 	return input;
 }
