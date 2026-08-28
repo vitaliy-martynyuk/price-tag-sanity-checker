@@ -4,7 +4,7 @@
 int main()
 {
 	float price{ getItemPrice() };
-	std::uint_fast16_t quantity{ getQuantity() };
+	std::uint16_t quantity{ getQuantity() };
 	char categoryCode{ getItemCategoryCode() };
 
 	printReceipt(price, quantity, categoryCode);

@@ -11,14 +11,14 @@ float getItemPrice()
 	return input;
 }
 
-std::uint_fast16_t getQuantity()
+std::uint16_t getQuantity()
 {
 	std::cout << "Enter item quantity: ";
 	int input{};
 	std::cin >> input;
 	//validation will go here
 
-	return static_cast<std::uint_fast16_t>(input);
+	return static_cast<std::uint16_t>(input);
 }
 
 char getItemCategoryCode()
@@ -31,7 +31,7 @@ char getItemCategoryCode()
 	return input;
 }
 
-void printReceipt(double price, double quantity, char categoryCode)
+void printReceipt(float price, std::uint16_t quantity, char categoryCode)
 {
 	std::cout << price << ' ' << quantity << ' ' << categoryCode << '\n';
 }

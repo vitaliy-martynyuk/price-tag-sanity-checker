@@ -4,8 +4,8 @@
 #include <cstdint>
 
 float getItemPrice();
-std::uint_fast16_t getQuantity();
+std::uint16_t getQuantity();
 char getItemCategoryCode();
-void printReceipt(double price, double quantity, char categoryCode);
+void printReceipt(float price, std::uint16_t quantity, char categoryCode);
 
 #endif
