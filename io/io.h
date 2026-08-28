@@ -8,6 +8,6 @@
 float getItemPrice();
 std::uint16_t getQuantity();
 char getItemCategoryCode();
-void printReceipt(float price, std::uint16_t quantity, char categoryCode, double total);
+void printReceipt(float price, std::uint16_t quantity, char categoryCode, float total);
 
 #endif

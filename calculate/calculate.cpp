@@ -1,11 +1,14 @@
 #include "calculate.h"
 
-double calculateTotal(float price, std::uint16_t quantity, char code)
+float calculateTotal(float price, std::uint16_t quantity, char code)
 {
+	float eTax{ 1.15f };
+	float cTax{ 1.1f };
+
 	if (code == 'E')
-		return price * quantity * 1.15;
+		return price * quantity * eTax;
 	else if (code == 'C')
-		return price * quantity * 1.1;
+		return price * quantity * cTax;
 	else
 		return price * quantity;
 }

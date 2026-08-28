@@ -3,6 +3,6 @@
 
 #include <cstdint>
 
-double calculateTotal(float price, std::uint16_t quantity, char code);
+float calculateTotal(float price, std::uint16_t quantity, char code);
 
 #endif 

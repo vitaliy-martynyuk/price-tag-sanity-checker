@@ -28,7 +28,7 @@ char getItemCategoryCode()
 	return static_cast<char>(std::toupper(static_cast<int>(input)));
 }
 
-void printReceipt(float price, std::uint16_t quantity, char categoryCode, double total)
+void printReceipt(float price, std::uint16_t quantity, char categoryCode, float total)
 {
 	std::cout << std::fixed << std::setprecision(2);
 	std::cout << "Price: " << price << '\n';

@@ -23,7 +23,7 @@ int main()
 		return EXIT_FAILURE;
 	}
 
-	double total{ calculateTotal(price, quantity, categoryCode) };
+	float total{ calculateTotal(price, quantity, categoryCode) };
 
 	printReceipt(price, quantity, categoryCode, total);
 
